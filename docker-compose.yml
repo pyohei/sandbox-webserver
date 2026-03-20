@@ -7,9 +7,6 @@ services:
       - ./site:/usr/share/nginx/html:ro
     depends_on:
       - redis
-    # networks:
-    #   - default
-    #   - dokploy-network
 
   redis:
     image: redis:7-alpine
@@ -19,7 +16,3 @@ services:
 
 volumes:
   redis_data:
-
-# networks:
-#   dokploy-network:
-#     external: true
