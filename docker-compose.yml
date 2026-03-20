@@ -1,6 +1,6 @@
 services:
   web:
-    image: nginxdemos/hello
+    build: .
     ports:
       - "8089:80"
     depends_on:
