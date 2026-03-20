@@ -2,7 +2,7 @@ services:
   web:
     image: nginx:1.27-alpine
     ports:
-      - "8080:80"
+      - "8089:80"
     volumes:
       - ./site:/usr/share/nginx/html:ro
     depends_on:
